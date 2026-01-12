@@ -1,35 +1,137 @@
-# Debugging & Documentation Exercises (Holberton - ChatGPT Introduction)
+# Enhancing Code Quality and Efficiency with ChatGPT
 
-This folder contains multiple small exercises focused on **debugging**, **error handling**, and **documentation** across Python and HTML/JavaScript.  
-Each task includes a short description of the issue, what was fixed, and how to run/test the solution.
+## 📌 Project Overview
+This project demonstrates how ChatGPT can be used to improve **code quality** through **debugging**, **error handling**, and **documentation** across multiple programming scenarios.  
+The tasks simulate common real-world issues developers face and show how AI can help identify bugs, improve robustness, and produce clearer, more maintainable code.
 
----
-
-## Repository Info
-- **Repository:** `holbertonschool-chatgpt-introduction`
-- **Directory:** `debugging`
+All exercises focus on core software development skills such as logical debugging, user input validation, game state handling, and clean documentation.
 
 ---
 
-## Files Overview
-
-| Task | Topic | File |
-|------|-------|------|
-| 0 | Debugging - Python Factorial | `factorial.py` |
-| 1 | Debugging - Python Arguments | `print_arguments.py` |
-| 2 | Debugging - HTML / JavaScript | `change_background.html` |
-| 3 | Debugging - Python Mines (Minesweeper) | `mines.py` |
-| 4 | Documentation - Python Factorial (Recursive) | `factorial_recursive.py` |
-| 5 | Error Handling - Python Checkbook | `checkbook.py` |
-| 6 | Debugging - Tic Tac Toe Python | `tic.py` |
+## 🎯 Objectives
+- Use ChatGPT to identify and fix logical and runtime errors
+- Improve program stability using proper error handling
+- Validate user inputs to prevent crashes and unexpected behavior
+- Add professional documentation to Python code
+- Demonstrate AI-assisted problem solving in realistic coding scenarios
 
 ---
 
+## 🧪 Tasks Overview (0–6)
 
+### 0️⃣ Debugging – Python Factorial (Iterative)
+**File:** `factorial.py`
 
+**Issue:** Infinite loop caused by a missing update of the loop variable.
 
+**Fix Applied:**
+- Decremented the loop counter inside the loop to ensure proper termination.
 
+**Outcome:**
+- Correct factorial calculation  
+- Program terminates as expected
 
+---
 
+### 1️⃣ Debugging – Python Arguments
+**File:** `print_arguments.py`
 
+**Issue:** Script printed the Python file name along with arguments.
+
+**Fix Applied:**
+- Started iteration from `sys.argv[1]` instead of `sys.argv[0]`.
+
+**Outcome:**
+- Only user-provided arguments are printed
+
+---
+
+### 2️⃣ Debugging – HTML / JavaScript (Change Background Color)
+**File:** `change_background.html`
+
+**Issue:** The provided HTML/JS snippet was incomplete/incorrectly structured, which could prevent the click handler from working reliably.
+
+**Fix Applied:**
+- Rebuilt a valid HTML structure (head/style/body)
+- Ensured the button exists before attaching the click listener
+- Generated a valid **6-digit hex** color before applying it
+
+**Outcome:**
+- Background color changes successfully on button click
+
+---
+
+### 3️⃣ Debugging – Python Minesweeper (Win Condition)
+**File:** `mines.py`
+
+**Issue:** Game lacked a win condition and could not detect successful completion.
+
+**Fix Applied:**
+- Implemented a win-detection mechanism by checking revealed non-mine cells
+- Added logic to end the game when all non-mine cells are revealed
+- Added basic bounds validation for user-entered coordinates
+
+**Outcome:**
+- Game correctly identifies win and loss states
+
+---
+
+### 4️⃣ Documentation – Python Recursive Factorial
+**File:** `factorial_recursive.py`
+
+**Issue:** Indentation problems and missing required documentation.
+
+**Solution:**
+- Fixed indentation
+- Added clear documentation with **three sections**:
+  - Function description
+  - Parameters
+  - Returns
+
+**Outcome:**
+- Code is self-documented and easier to understand
+
+---
+
+### 5️⃣ Error Handling – Python Checkbook
+**File:** `checkbook.py`
+
+**Issue:** Program crashed on non-numeric input when converting user input to `float`.
+
+**Fix Applied:**
+- Added input validation and `try/except` handling for numeric conversion
+- Displayed user-friendly error messages
+- Ensured deposit/withdraw amounts are positive
+
+**Outcome:**
+- Program no longer crashes on invalid input  
+- Improved user experience and robustness
+
+---
+
+### 6️⃣ Debugging – Tic Tac Toe (Python)
+**File:** `tic.py`
+
+**Issues Identified:**
+- Incorrect winner display due to turn switching logic
+- No input validation (type/range) which could crash the program
+- No draw condition when the board becomes full
+
+**Fixes Applied:**
+- Corrected winner logic (check win before switching players)
+- Added input validation (numbers only, values 0–2)
+- Implemented draw detection when no moves remain
+- Prevented overwriting an occupied cell
+
+**Outcome:**
+- Fully functional game with win, lose, and draw states  
+- Inputs are safely handled without crashing
+
+---
+
+## ▶️ How to Run
+
+> Make scripts executable if needed:
+```bash
+chmod +x *.py
 
