@@ -129,9 +129,11 @@ All exercises focus on core software development skills such as logical debuggin
 
 ---
 
-## ▶️ How to Run
+## 🧩 Introduction
 
-> Make scripts executable if needed:
-```bash
-chmod +x *.py
+This project showcases how AI-assisted development (using ChatGPT) can improve **code quality** through real debugging, error handling, and documentation exercises.  
+Each task reflects common issues developers face—such as infinite loops, incorrect argument handling, broken UI interactions, missing win conditions in games, and unsafe user input—and demonstrates how to resolve them with clean, reliable solutions.
+
+By completing these exercises, the project delivers a set of **robust, user-safe, and well-documented programs**, highlighting practical best practices and the value of integrating AI tools into everyday coding workflows.
+
 
